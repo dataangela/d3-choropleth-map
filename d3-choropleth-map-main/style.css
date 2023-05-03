@@ -1,0 +1,32 @@
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+#plot {
+  background: lightgray;
+  min-width: 1000px;
+  min-height: 650px;
+}
+
+#description {
+  margin-bottom: 0.7rem;
+}
+#legend {
+  width: 400px;
+  height: 100px;
+}
+
+#tooltip {
+  visibility: hidden;
+  height: auto;
+  width: auto;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js" integrity="sha512-0XfwGD1nxplHpehcSVI7lY+m/5L37PNHDt+DOc7aLFckwPXjnjeA1oeNbru7YeI4VLs9i+ADnnHEhP69C9CqTA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Choropleth Map</title>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <div id="description">
+    Percentage of adults age 25 and older with a bachelor's degree or higher
+    (2010-2014)
+    </div>
+    <svg id='legend'>
+        <g>
+            <rect x='0' y='0' width='40' height='30' fill='#ade8f4'></rect>
+            <text x='0' y='50'><3%</text>
+        </g>
+        <g>
+            <rect x='40' y='0' width='40' height='30' fill='#90e0ef'></rect>
+            <text x='40' y='50'><12%</text>
+        </g>
+        <g>
+            <rect x='80' y='0' width='40' height='30' fill='#48cae4'></rect>
+            <text x='80' y='50'><21%</text>
+        </g>
+        <g>
+            <rect x='120' y='0' width='40' height='30' fill='#00b4d8'></rect>
+            <text x='120' y='50'><30%</text>
+        </g>
+        <g>
+            <rect x='160' y='0' width='40' height='30' fill='#0096c7'></rect>
+            <text x='160' y='50'><39%</text>
+        </g>
+        <g>
+            <rect x='200' y='0' width='40' height='30' fill='#0077b6'></rect>
+            <text x='200' y='50'><48%</text>
+        </g>
+        <g>
+            <rect x='240' y='0' width='40' height='30' fill='#023e8a'></rect>
+            <text x='240' y='50'><57%</text>
+        </g>
+        <g>
+            <rect x='280' y='0' width='40' height='30' fill='#03045e'></rect>
+            <text x='280' y='50'><66%</text>
+        </g>
+    </svg>
+    <div id='tooltip'></div>
+    <svg id='plot'></svg>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script src='app.js'></script>
+</body>
+</html>
